@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dice App</title>
+</head>
+<body>
+
+  <h1>🎲 Dice Roller</h1>
+
+  <h2 id="result">1</h2>
+
+  <button id="btn">Roll Dice</button>
+
+  <script>
+    let button = document.getElementById("btn");
+    let result = document.getElementById("result");
+
+    button.addEventListener("click", function() {
+      let randomNumber = Math.ceil(Math.random() * 6);
+      result.innerText = randomNumber;
+    });
+  </script>
+
+</body>
+</html>
